@@ -39,6 +39,7 @@ whisk:
     type: NodePort
     annotations:
     domain: "domain"
+    loadBalancerIP: ""
     tls:
       enabled: false
       secretenabled: false

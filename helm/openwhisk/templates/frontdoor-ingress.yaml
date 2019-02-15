@@ -21,6 +21,7 @@ spec:
     secretName: {{ .Values.whisk.ingress.tls.secretname | quote }}
     {{- end }}
   {{- end }}
+  loadBalancerIP: {{ .Values.whisk.ingress.loadBalancerIP}}
   rules:
   - host: {{ .Values.whisk.ingress.domain }}
     http:
